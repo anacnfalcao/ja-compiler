@@ -1,15 +1,15 @@
-# ja-compiler v4.0
+# ja-compiler v3.0
 A Ja compiler created using C, lex and yacc that produces LLVM assembly language. Ja is a small version of the Java 8 language.
 
 Ja Compiler was made by me and Ana Madeira for an academic project of the Compilers class of the University of Coimbra. 
 
 ## 1 - Getting started
- 1. - Clone this repository into your computer.
- 2. - Make sure you have a C compiler installed as well as Lex, Yacc and LLVM.
- 3. - Compile the application using the following command: `lex jac.l; yacc -d jac.y; cc -o jac ast.c y.tab.c lex.yy.c -ll -ly`
- 5. - Write your Ja program in a file, let's call it `HelloWorld.ja`.
- 4. - Compile your program using the Ja Compiler to obtain a LLVM assembly language file: `./jac < HelloWorld.ja > out.ll`.
- 5. - Execute your program using the following command: `llc-3.8 out.ll;clang-3.8 -o out out.s;./out`
+ 1. Clone this repository into your computer.
+ 2. Make sure you have a C compiler installed as well as Lex, Yacc and LLVM.
+ 3. Compile the application using the following command: `lex jac.l; yacc -d jac.y; cc -o jac ast.c y.tab.c lex.yy.c -ll -ly`
+ 5. Write your Ja program in a file, let's call it `HelloWorld.ja`.
+ 4. Compile your program using the Ja Compiler to obtain a LLVM assembly language file: `./jac < HelloWorld.ja > out.ll`.
+ 5. Execute your program using the following command: `llc-3.8 out.ll;clang-3.8 -o out out.s;./out`
 
 ## 2 - What is Ja?
 Ja is a small subset of the Java 8 language that only accepts a single class program with mutiple public static programs.
