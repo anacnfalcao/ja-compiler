@@ -1,7 +1,7 @@
-# ja-compiler v3.0
+# ja-compiler V3.0
 A Ja compiler created using C, lex and yacc that produces LLVM assembly language. Ja is a small version of the Java 8 language.
 
-Ja Compiler was made by me and Ana Madeira for an academic project of the Compilers class of the University of Coimbra. 
+Ja Compiler was made by me and Ana Madeira as an academic project for the Compilers class of University of Coimbra. 
 
 ## 1 - Getting started
  1. Clone this repository into your computer.
@@ -14,7 +14,7 @@ Ja Compiler was made by me and Ana Madeira for an academic project of the Compil
 ## 2 - What is Ja?
 Ja is a small subset of the Java 8 language that only accepts a single class program with mutiple public static programs.
 
-### 2.1 - What does a program in Ja looks like?
+### 2.1 - What does a JA program looks like?
 The following code is a simple program in Ja that calculates the greatest common divisor(gcd) between two numbers given as the program's arguments.
 ```
 class gcd2 {
