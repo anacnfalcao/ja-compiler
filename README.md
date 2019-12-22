@@ -1,20 +1,20 @@
 # ja-compiler V3.0
-A Ja compiler created using C, lex and yacc that produces LLVM assembly language. Ja is a small version of the Java 8 language.
+Ja compiler was created using C, lex and yacc that produces LLVM assembly language. Ja is a small subset of Java 8.
 
-Ja Compiler was made by me and Ana Madeira as an academic project for the Compilers class of University of Coimbra. 
+Ja Compiler was made by me and Ana Madeira as an academic project for the Compilers class of the University of Coimbra. 
 
 ## 1 - Getting started
  1. Clone this repository into your computer.
  2. Make sure you have a C compiler installed as well as Lex, Yacc and LLVM.
  3. Compile the application using the following command: `lex jac.l; yacc -d jac.y; cc -o jac ast.c y.tab.c lex.yy.c -ll -ly`
- 5. Write your Ja program in a file, let's call it `HelloWorld.ja`.
+ 5. Write your Ja program in a file, e.g. `HelloWorld.ja`.
  4. Compile your program using the Ja Compiler to obtain a LLVM assembly language file: `./jac < HelloWorld.ja > out.ll`.
  5. Execute your program using the following command: `llc-3.8 out.ll;clang-3.8 -o out out.s;./out`
 
 ## 2 - What is Ja?
-Ja is a small subset of the Java 8 language that only accepts a single class program with mutiple public static programs.
+Ja is a small subset of the Java 8 language that only accepts a single class program with multiple public static programs.
 
-### 2.1 - What does a JA program looks like?
+### 2.1 - What does a JA program look like?
 The following code is a simple program in Ja that calculates the greatest common divisor(gcd) between two numbers given as the program's arguments.
 ```
 class gcd2 {
@@ -142,14 +142,14 @@ Considering your program file is called `HelloWorld.ja`, you can execute jac usi
 ./jac < HelloWorld.ja > out.ll
 ```
 #### 3.2.1 - Jac Flags
-There are mutiple flags you can use to obtain different outputs that correspond to different compiling phases. If no flag is used, jac will produce LLVM  assembly code that can be executed with llvm.
+There are multiple flags you can use to obtain different outputs that correspond to different compiling phases. If no flag is used, jac will produce LLVM  assembly code that can be executed with llvm.
 Flags:
 ```
  -l			- produces a sequence of read tokens
  -1			- produces a sequence of read tokens
  -2			- produces an abstract syntax tree
  -t			- produces an abstract syntax tree with annotations
- -s			- produces a symbol table containg the methods and variables
+ -s			- produces a symbol table containing the methods and variables
 ```
 Using a flag:
 ```
@@ -164,4 +164,4 @@ clang-3.8 -o out out.s
 ```
 
 ## 4 - Thanks
-A special thanks to my coworker Ana Madeira, ofcourse, and our teacher, Carlos Fonseca, for teaching us the Compilers art.
+A special thanks to my coworker Ana Madeira, of course, and our teacher, Carlos Fonseca, for teaching us the Compilers art.
